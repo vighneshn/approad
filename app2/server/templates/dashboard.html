@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>Dashboard <small> Welcome {{session.username}}</small></h1>
+  <a class="btn btn-primary" href="/add_review"> Insert Data </a><hr>
+  <a class="btn btn-success" href="/user_view_data"> View your data </a><br>
+  <a class="btn btn-success" href="/view_aggregate_data"> View aggregate data </a><br>
+  <a class="btn btn-success" href="/view_states_around_point"> View stats of data around a particular point </a><br>
+  <a class="btn btn-success" href="/view_closest_point"> View closest point in db to entered point </a><br>
+  <a class="btn btn-success" href="/view_friend"> View friends data </a>
+  <hr>
+{% endblock %}

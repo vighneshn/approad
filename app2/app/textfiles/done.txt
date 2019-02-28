@@ -1,0 +1,2 @@
+1) Interaction with database.
+#TODO next: Establish the fields of the data, see how to insert these into a table using mdb.py and flask. Server on this laptop on this name.

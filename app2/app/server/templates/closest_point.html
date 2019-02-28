@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>View closest point to touched point, of  particular category</h1>
+  <h3>Enter the scale, category, latitude n longitude </h3>
+  {% from "includes/_formhelpers.html" import render_field %}
+  <form method="POST" action="">
+    <div class="form-group">
+      {{ render_field(form.category, class_="form-control") }}
+    </div>
+    <div class="form-group">
+      {{ render_field(form.scale, class_="form-control") }}
+    </div>
+    <div class="form-group">
+      {{ render_field(form.longi, class_="form-control") }}
+    </div>
+    <div class="form-group">
+      {{ render_field(form.lati, class_="form-control") }}
+    </div>
+    <p><input class="btn btn-primary" type="submit" value="Submit">
+  </form>
+{% endblock %}

@@ -1,0 +1,22 @@
+1)app - user can touch/drag over a region
+1.5)Need to figure out the scale, how much of our graphic to display, from the table
+2)we must get info of his drag, like what road etc, and leave him options on wht to rate the region based on. Store all the points of the drag, and snap to the road, if necessary toto clearly get the entire region on the road. Somehow, try and minimize the number of points needed to draw lines.
+3)data to work with - table:
+userid, name, email/facebook, num ratings, avg rating, {places rated(#find way to mark a part of the road#Or can be just a target#), category, ratings given, comments}, isgovt, credibility, last rating info, last rating time
+4)for now these are the categories, need to see how to give credibility, secondary. Most imp is the map info, info of a drag. Check out how to use poly lines.
+
+##Need to see how to accumulate everyones data and display it, as peoples markings may not overlap. Probably second database for this.
+
+Methods to write for now:
+//DB for user calls
+- insert basic user data
+- insert reviews, update metrics and statistics
+- read for a particular user, store his data locally on phone I guess.
+- identify coordinate he is at, scale, draw appropriate markers/graphics.
+- Give option for user to view his markings and average markings.
+
+OVERALL, NEED A GOOD UTIL.PY FILE
+
+//DB for roads, data from all users.
+- Do it point by point? give each point radius of 20m, and associate votes of the swipe to these points.
+- Need to use the circle method of geostat mongodb efficiently here.
