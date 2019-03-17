@@ -222,7 +222,7 @@ def user_view_data():
 	## A form to retrive only particular review, or just return the entire thing. For now entire thing.
 	data = util.user_view_reviews(link, db_name, collection_name, session['username'])
 	## TRY: data or jsonify(data)?? Try both
-	return data
+	return jsonify(data)
 
 ##
 # To return the aggregate data
